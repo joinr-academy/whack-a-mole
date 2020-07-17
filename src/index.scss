@@ -2,17 +2,73 @@
 // @import "../node_modules/bulma/bulma";
 
 //! utilities
-@import "./styles/utils/mixins"; // global mixins
-@import "./styles/utils/variables"; // global variables
+@import './styles/utils/mixins'; // global mixins
+@import './styles/utils/variables'; // global variables
 
 //! setup
-@import "./styles/setup/normalize"; // normalize browsers to make more consistent
-@import "./styles/setup/clearfix"; // clearfix for floats
-@import "./styles/setup/border-box"; // global border-box setting
+@import './styles/setup/normalize'; // normalize browsers to make more consistent
+@import './styles/setup/clearfix'; // clearfix for floats
+@import './styles/setup/border-box'; // global border-box setting
 
 //! global styles
-@import "./styles/global/typography"; // global typography
-@import "./styles/global/global"; // global styles
+@import './styles/global/typography'; // global typography
+// @import './styles/global/global'; // global styles
 
 //! sections
-@import "./styles/layout/header";
+// @import './styles/layout/header';
+
+body {
+  background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+
+.container {
+  padding: 20px;
+}
+
+.elements,
+.buttons {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+.button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  font-weight: bolder;
+  margin-bottom: 5px;
+  border-radius: 2px;
+  &__play {
+    background-color: #4caf50;
+  }
+  &__stop {
+    background-color: #008cba;
+  }
+}
+
+hr {
+  width: 50%;
+  margin: auto;
+  height: 15px;
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    padding: 5px;
+  }
+  hr {
+    width: 80%;
+  }
+}

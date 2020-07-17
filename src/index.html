@@ -42,27 +42,68 @@
   </head>
 
   <body>
-    <header>
-      <div class="wrapper">
-        <div class="nav">
-          <a
-            class="logo-link"
-            href="https://github.com/tr1s/tris-webpack-boilerplate"
-            aria-label="Tristan's webpack boilerplate github repository."
-          >
-            <img class="logo-img" src="images/favicon.svg" alt="website logo" />
-          </a>
-          <h1>
-            tris <span>webpack</span>
-            <a
-              class="link"
-              href="https://github.com/tr1s/tris-webpack-boilerplate"
-              aria-label="Tristan's webpack boilerplate github repository."
-              >boilerplate</a
-            >
-          </h1>
-        </div>
+    <div class="container">
+      <h1>Whack a mole</h1>
+      <hr />
+      <div class="elements">
+        <h3>Score: <input id="score" value="0" size="10" /></h3>
+
+        <input type="radio" name="circle" data-circle="0" id="0" />
+
+        <input type="radio" name="circle" data-circle="1" />
+        <input type="radio" name="circle" data-circle="2" />
+        <input type="radio" name="circle" data-circle="3" />
+        <input type="radio" name="circle" data-circle="4" />
+        <input type="radio" name="circle" data-circle="5" />
+        <br />
+
+        <input type="radio" name="circle" data-circle="6" />
+        <input type="radio" name="circle" data-circle="7" />
+        <input type="radio" name="circle" data-circle="8" />
+        <input type="radio" name="circle" data-circle="9" />
+        <input type="radio" name="circle" data-circle="10" />
+        <input type="radio" name="circle" data-circle="11" />
+        <br />
+
+        <input type="radio" name="circle" data-circle="12" />
+        <input type="radio" name="circle" data-circle="13" />
+        <input type="radio" name="circle" data-circle="14" />
+        <input type="radio" name="circle" data-circle="15" />
+        <input type="radio" name="circle" data-circle="16" />
+        <input type="radio" name="circle" data-circle="17" />
+        <br />
+
+        <input type="radio" name="circle" data-circle="18" />
+        <input type="radio" name="circle" data-circle="19" />
+        <input type="radio" name="circle" data-circle="20" />
+        <input type="radio" name="circle" data-circle="21" />
+        <input type="radio" name="circle" data-circle="22" />
+        <input type="radio" name="circle" data-circle="23" />
+        <br />
+
+        <input type="radio" name="circle" data-circle="24" />
+        <input type="radio" name="circle" data-circle="25" />
+        <input type="radio" name="circle" data-circle="26" />
+        <input type="radio" name="circle" data-circle="27" />
+        <input type="radio" name="circle" data-circle="28" />
+        <input type="radio" name="circle" data-circle="29" />
+        <br />
+
+        <input type="radio" name="circle" data-circle="30" />
+        <input type="radio" name="circle" data-circle="31" />
+        <input type="radio" name="circle" data-circle="32" />
+        <input type="radio" name="circle" data-circle="33" />
+        <input type="radio" name="circle" data-circle="34" />
+        <input type="radio" name="circle" data-circle="35" />
       </div>
-    </header>
+      <br />
+
+      <hr />
+      <br />
+      <div class="buttons">
+        <button id="play" class="button button__play">Play</button>
+        <button id="stop" class="button button__stop">Stop</button>
+      </div>
+    </div>
   </body>
 </html>
